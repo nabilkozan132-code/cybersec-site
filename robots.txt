@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://nabilkozan132-code.github.io/cybersec-site/sitemap.xml
