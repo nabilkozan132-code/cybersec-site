@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مقالة</title>
-    <link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مقال عن كولومبيا</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.8;
+      margin: 20px;
+      background: #f9f9f9;
+      direction: rtl;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #333;
+      font-size: 28px;
+    }
+    p {
+      font-size: 18px;
+      color: #444;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>مدونتي</h1>
-        <nav>
-            <a href="index.html">الرئيسية</a>
-            <a href="about.html">من نحن</a>
-            <a href="contact.html">اتصل بنا</a>
-        </nav>
-    </header>
+  <div class="container">
+    <h1>السياحة في كولومبيا – سحر الطبيعة والثقافة</h1>
+    <img src="images/colombia-girl.jpg" alt="صورة من كولومبيا">
 
-    <main>
-        <article>
-            <h2>عنوان المقالة</h2>
-            <p>هذا مثال لمقالة في موقعك. يمكنك تعديل النصوص كما تريد.</p>
-        </article>
+    <p>
+      تعد كولومبيا من أجمل الدول في أمريكا اللاتينية، فهي تجمع بين الطبيعة الخلابة، 
+      الجبال الخضراء، الشواطئ الذهبية، والمدن التاريخية الغنية بالثقافة والفنون.
+    </p>
 
-        <!-- ✅ قسم التعليقات Disqus -->
-        <div id="disqus_thread"></div>
-        <script>
-            var disqus_config = function () {
-                this.page.url = window.location.href;  // الرابط الحالي
-                this.page.identifier = document.title; // معرف فريد للصفحة
-            };
+    <p>
+      الحياة في كولومبيا مليئة بالألوان، الموسيقى اللاتينية، والرقصات الشعبية مثل 
+      السالسا. كما أن الشعب الكولومبي يتميز بالدفء والكرم وحب الحياة.
+    </p>
 
-            (function() {
-                var d = document, s = d.createElement('script');
-                s.src = 'https://cybersec-site-123.disqus.com/embed.js';  // <-- shortname الخاص بك
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>من فضلك فعّل الجافاسكريبت لرؤية التعليقات بواسطة Disqus.</noscript>
-    </main>
-
-    <footer>
-        <p>© 2025 مدونتي - جميع الحقوق محفوظة</p>
-    </footer>
+    <p>
+      إذا كنت تبحث عن وجهة سياحية تجمع بين المغامرة والثقافة، 
+      فإن كولومبيا تعتبر خيارًا رائعًا لعشاق السفر والاكتشاف.
+    </p>
+  </div>
 </body>
 </html>
