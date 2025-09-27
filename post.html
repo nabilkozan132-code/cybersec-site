@@ -1,44 +1,17 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>عنوان المقال - مدونتي</title>
-  <link rel="stylesheet" href="../assets/style.css">
-</head>
-<body>
-  <header class="topbar">
-    <div class="container">
-      <div class="brand"><a href="../index.html">مدونتي</a></div>
-      <nav class="nav">
-        <a href="../index.html">الرئيسية</a>
-        <a href="../about.html">عن الموقع</a>
-        <a href="../contact.html">اتصل بنا</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container wide article">
-    <article>
-      <h1>عنوان المقال التجريبي</h1>
-      <p class="meta">29 سبتمبر 2025 • الكاتب: مؤلف</p>
-      <img class="hero" src="../images/post1.jpg" alt="صورة">
-      <div class="content">
-        <p>هذا نص تجريبي للمقال. القالب مُجهز لخط كبير وواضح ومساحات واسعة لراحة القارئ.</p>
-        <p>يمكنك إضافة فقرات طويلة وصور وحِصر للأقسام. اضف مقالاتك داخل مجلد posts كملف html منفصل.</p>
-      </div>
-    </article>
-
-    <section id="comments" class="comments">
-      <h2>التعليقات</h2>
-      <p>لإضافة تعليقات مباشرة دون حساب، استخدم Google Forms أو ضع كود Disqus هنا.</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 مدونتي</p>
-    </div>
-  </footer>
-</body>
-</html>
+<section id="comments" class="comments">
+  <h2>التعليقات</h2>
+  <div id="disqus_thread"></div>
+  <script>
+      var disqus_config = function () {
+          this.page.url = window.location.href;  
+          this.page.identifier = document.title; 
+      };
+      (function() {  
+          var d = document, s = d.createElement('script');
+          s.src = 'https://cybersec-site-123.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>الرجاء تفعيل الجافاسكريبت لعرض التعليقات <a href="https://disqus.com/?ref_noscript">من هنا</a></noscript>
+</section>
