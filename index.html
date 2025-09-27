@@ -1,28 +1,69 @@
-<!DOCTYPE html>
-<html lang="ar">
+<!doctype html>
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>اكتشف كولومبيا</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>مدونتي - الرئيسية</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <header>
-    <h1>مرحباً بك في كولومبيا</h1>
-    <nav>
-      <a href="index.html">الرئيسية</a>
-      <a href="life.html">الحياة</a>
-      <a href="marriage.html">الزواج</a>
-      <a href="location.html">الموقع</a>
-      <a href="gallery.html">معرض الصور</a>
-    </nav>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand"><a href="index.html">مدونتي</a></div>
+      <nav class="nav">
+        <a href="index.html">الرئيسية</a>
+        <a href="about.html">عن الموقع</a>
+        <a href="contact.html">اتصل بنا</a>
+      </nav>
+    </div>
   </header>
-  <main>
-    <h2>لمحة عن كولومبيا</h2>
-    <p>كولومبيا دولة تقع في أمريكا الجنوبية، وتتميز بثقافة غنية وطبيعة ساحرة واقتصاد متنوع. هنا ستجد كل ما تحتاج معرفته عن الحياة، الزواج، والموقع الجغرافي.</p>
+
+  <main class="container wide">
+    <section class="posts">
+      <article class="post-card">
+        <img src="images/post1.jpg" alt="صورة المقال">
+        <div class="post-body">
+          <h2><a href="posts/example-post.html">عنوان المقال التجريبي — تصميم عريض وخط كبير</a></h2>
+          <p class="meta">29 سبتمبر 2025 • قراءة: 3 دقائق</p>
+          <p class="excerpt">هذا ملخص تجريبي للمقال. صُمم العرض ليكون واضحاً وبخط كبير مناسب للقراءة على الشاشات.</p>
+          <a class="readmore" href="posts/example-post.html">اقرأ المزيد</a>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <img src="images/post2.jpg" alt="صورة المقال">
+        <div class="post-body">
+          <h2><a href="posts/example-post2.html">مقال توضيحي ثاني</a></h2>
+          <p class="meta">20 سبتمبر 2025 • قراءة: 2 دقائق</p>
+          <p class="excerpt">بطاقات المقالات عريضة مع صورة كبيرة ونص واضح لقراءة سهلة.</p>
+          <a class="readmore" href="posts/example-post2.html">اقرأ المزيد</a>
+        </div>
+      </article>
+
+    </section>
+
+    <aside class="sidebar">
+      <div class="widget">
+        <h3>نبذة سريعة</h3>
+        <p>مرحبا! هذه مدونة تجريبية مبنية كقالب ثابت يعمل على GitHub Pages.</p>
+      </div>
+      <div class="widget">
+        <h3>تابعنا</h3>
+        <div class="socials">
+          <a href="#" aria-label="facebook">فيسبوك</a>
+          <a href="#" aria-label="instagram">انستغرام</a>
+          <a href="#" aria-label="whatsapp">واتساب</a>
+        </div>
+      </div>
+    </aside>
   </main>
-  <footer>
-    <p>حقوق النشر © 2025 - موقع كولومبيا</p>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 مدونتي — جميع الحقوق محفوظة</p>
+    </div>
   </footer>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>

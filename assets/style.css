@@ -1,1 +1,38 @@
-body{font-family:Tahoma, Arial;direction:rtl;background:#f7f7f7;color:#111;margin:0} .container{max-width:900px;margin:0 auto;padding:18px} .site-header{background:#0b4a6f;color:#fff;padding:14px} .main-nav a{color:#fff;margin:0 8px;text-decoration:none} .site-footer{background:#222;color:#ddd;text-align:center;padding:14px;margin-top:20px} .button{background:#1e8bc3;color:#fff;padding:10px 14px;border-radius:6px;text-decoration:none} .note{background:#fff8cc;padding:10px;border-left:4px solid #f0c419;margin:10px 0}
+
+:root{
+  --bg:#f6f8fa;
+  --card:#fff;
+  --accent:#1565c0;
+  --text:#111;
+  --muted:#666;
+}
+*{box-sizing:border-box}
+body{font-family: 'Segoe UI', Tahoma, Arial, sans-serif; margin:0; background:var(--bg); color:var(--text); direction:rtl}
+.container{max-width:1200px;margin:0 auto;padding:18px}
+.topbar{background:var(--accent);color:#fff;padding:16px 0}
+.topbar .brand a{color:#fff;text-decoration:none;font-weight:700;font-size:24px}
+.nav a{color:#fff;text-decoration:none;margin-left:16px;font-size:16px}
+.wide{display:flex;gap:24px;align-items:flex-start}
+.posts{flex:1}
+.sidebar{width:320px}
+.post-card{display:flex;gap:18px;background:var(--card);border-radius:8px;padding:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06);margin-bottom:18px}
+.post-card img{width:360px;height:220px;object-fit:cover;border-radius:6px}
+.post-body h2{margin:0 0 8px;font-size:30px}
+.post-body .meta{color:var(--muted);margin-bottom:10px}
+.excerpt{font-size:20px;line-height:1.8;color:#222}
+.readmore{display:inline-block;margin-top:12px;background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
+.article h1{font-size:36px;margin-top:0}
+.article .hero{width:100%;max-height:480px;object-fit:cover;border-radius:6px;margin:14px 0}
+.content p{font-size:20px;line-height:1.9}
+.site-footer{background:#111;color:#ddd;padding:22px 0;margin-top:28px;text-align:center}
+.contact-form label{display:block;margin:12px 0;font-size:16px}
+.contact-form input,.contact-form textarea{width:100%;padding:10px;border-radius:6px;border:1px solid #ddd;font-size:16px}
+.contact-form button{background:var(--accent);color:#fff;padding:12px 18px;border:none;border-radius:8px;font-size:16px}
+@media(max-width:900px){
+  .wide{flex-direction:column}
+  .sidebar{width:100%}
+  .post-card{flex-direction:column}
+  .post-card img{width:100%;height:auto}
+  .post-body h2{font-size:24px}
+  .post-body .meta{font-size:14px}
+}
