@@ -1,17 +1,47 @@
-<section id="comments" class="comments">
-  <h2>التعليقات</h2>
-  <div id="disqus_thread"></div>
-  <script>
-      var disqus_config = function () {
-          this.page.url = window.location.href;  
-          this.page.identifier = document.title; 
-      };
-      (function() {  
-          var d = document, s = d.createElement('script');
-          s.src = 'https://cybersec-site-123.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-      })();
-  </script>
-  <noscript>الرجاء تفعيل الجافاسكريبت لعرض التعليقات <a href="https://disqus.com/?ref_noscript">من هنا</a></noscript>
-</section>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالة</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>مدونتي</h1>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">من نحن</a>
+            <a href="contact.html">اتصل بنا</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>عنوان المقالة</h2>
+            <p>هذا مثال لمقالة في موقعك. يمكنك تعديل النصوص كما تريد.</p>
+        </article>
+
+        <!-- ✅ قسم التعليقات Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = window.location.href;  // الرابط الحالي
+                this.page.identifier = document.title; // معرف فريد للصفحة
+            };
+
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://cybersec-site-123.disqus.com/embed.js';  // <-- shortname الخاص بك
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>من فضلك فعّل الجافاسكريبت لرؤية التعليقات بواسطة Disqus.</noscript>
+    </main>
+
+    <footer>
+        <p>© 2025 مدونتي - جميع الحقوق محفوظة</p>
+    </footer>
+</body>
+</html>
